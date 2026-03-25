@@ -1,7 +1,7 @@
 import streamlit as st
-from agents.planner import generate_plan
-from agents.writer import write_content
-from agents.editor import refine_content
+from app.agents.planner import generate_plan
+from app.agents.writer import write_content
+from app.agents.editor import refine_content
 
 st.set_page_config(page_title="Writing Agent", page_icon="✍️")
 
