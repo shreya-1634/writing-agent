@@ -1,12 +1,11 @@
 import sys
 import os
-import streamlit as st
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+from agents.writer import write_content
 from agents.planner import generate_plan
-from app.agents.writer import write_content
-from app.agents.editor import refine_content
+from agents.editor import refine_content
 
 st.set_page_config(page_title="Writing Agent", page_icon="✍️")
 
