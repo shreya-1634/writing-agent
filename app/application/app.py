@@ -1,5 +1,10 @@
+import sys
+import os
 import streamlit as st
-from app.agents.planner import generate_plan
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from agents.planner import generate_plan
 from app.agents.writer import write_content
 from app.agents.editor import refine_content
 
